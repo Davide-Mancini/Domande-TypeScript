@@ -24,7 +24,7 @@
  
 
 // <!-- RISPOSTE -->
-//  1) I dati primitivi in TS sono: String, Number, Boolean, Null , Undefined,Any,Never.
+// 1) I dati primitivi in TS sono: String, Number, Boolean, Null , Undefined,Any,Never.
 /* 2) */ const MyName :string='Davide'
          const MyAge :number =26
          const StudingTS :boolean = true
@@ -35,7 +35,7 @@
 }  
 console.log(MyPrice(10,22))
 /* 6)*/ const MyString = ( s1:string, s2:string)=>{
-    return s1+s2
+    return (s1+s2).length
 }
 console.log(MyString('Davide',' Mancini'))
 // 7) Una Type Union permette di creare un unione di diversi tipi e si usa il simbolo '|' e si scrive in una variabile per esempio:
@@ -91,4 +91,9 @@ engine:true,
 wheels:4,
 color:'black',
 brand:'FIAT'
+}
+// 18) I generics sono un tipo che viene fornito come argomento in un interfaccia, fornisce un parametro e può rendere generica la proprietà di un oggetto
+// 19) SI
+/*20)*/ interface MyFetch <A>{
+
 }
